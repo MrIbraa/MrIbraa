@@ -1,65 +1,149 @@
-<!DOCTYPE html>
-<html lang="fr">
-<h1><center>IbrahimCorp</center></h1>
-<style>
-    h1 {
-        font-size: 72px;
-        text-align: center;
-        color: rgb(242, 255, 0);
-        font-family: Arial, sans-serif;
-        animation: clignote 1.5s infinite alternate;
-    }
+<html lang="fr"><head>
+    <link rel="icon" href="limage-de-marque.png" type="image/png">
+    <link rel="apple-touch-icon" href="limage-de-marque.png">
 
-    @keyframes clignote {
-        0% {
-            text-shadow: 0 0 10px rgb(9, 226, 255), 0 0 20px rgb(0, 234, 255), 0 0 30px rgb(0, 200, 255);
-            opacity: 1;
-        }
-        100% {
-            text-shadow: 0 0 10px rgb(0, 208, 255), 0 0 20px #00fbff, 0 0 30px #00ffd0;
-            opacity: 0.3;
-        }
-    }
-    
-</style>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <title>Mon CV</title>
+
+    <!-- Lien pour les icônes Material -->
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+
     <style>
+        /* Style général de la page */
         body {
             font-family: Arial, sans-serif;
-            line-height: 1.6;
             background-color: #4a4848;
             margin: 0;
             padding: 0;
+            color: white;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+            flex-direction: column;
         }
-        
+
+        /* Animation du texte du nom */
+        .heroSection {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            flex-wrap: wrap;
+            text-align: center;
+        }
+
+        .heroSection h1 {
+            font-size: 72px;
+            color: rgb(242, 255, 0);
+            font-family: Arial, sans-serif;
+            animation: clignote 1.5s infinite alternate;
+            margin: 0 5px; /* Espace entre les lettres */
+        }
+
+        @keyframes clignote {
+            0% {
+                text-shadow: 0 0 10px rgb(255, 9, 9), 0 0 20px rgb(255, 0, 0), 0 0 30px rgb(255, 0, 0);
+                opacity: 1;
+            }
+
+            100% {
+                text-shadow: 0 0 10px rgb(0, 208, 255), 0 0 20px #00fbff, 0 0 30px #00ffd0;
+                opacity: 0.3;
+            }
+        }
+
+        /* Conteneur des boutons */
+        .SocialButtons {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            margin-top: 30px;
+        }
+
+        .linkbutton {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            text-decoration: none;
+            background-color: #007bff;
+            color: white;
+            margin: 10px;
+            padding: 12px 20px;
+            border-radius: 8px;
+            width: 250px;
+            font-size: 16px;
+            transition: background-color 0.3s, transform 0.3s;
+        }
+
+        .linkbutton:hover {
+            background-color: #0056b3;
+            transform: translateY(-5px);
+        }
+
+        .linkbutton .material-icons {
+            margin-right: 10px;
+        }
+
+        .linkbutton p {
+            margin: 0;
+        }
+
+        .linkbutton h3 {
+            margin-top: 10px;
+            font-size: 18px;
+            font-weight: normal;
+        }
+
+        /* Centrer le texte "ETUDIANT EN BAC PRO" */
+        .positions {
+            margin-top: 20px;
+            font-size: 18px;
+            font-weight: bold;
+            text-align: center;
+        }
+
+        .tags span {
+            background-color: #333;
+            padding: 5px 10px;
+            border-radius: 20px;
+            font-size: 14px;
+        }
+
+        /* Mise en forme de l'icon avec du texte */
+        .tags svg {
+            margin-left: 50px;
+            vertical-align: middle;
+        }
+    </style>
+</head>
+
+<body>
+
+    <!-- Section d'animation du nom -->
+    <div class="heroSection">
+        <h1>I</h1><h1>B</h1><h1>R</h1><h1>A</h1><h1>H</h1><h1>I</h1><h1>M</h1><h1>C</h1><h1>O</h1><h1>R</h1><h1>P</h1>
+    </div>
+
+    <!-- Section Étudiant en Bac Pro -->
+    <div class="positions">
+        <span class="my-position">ETUDIANT EN BAC PRO</span>
+    </div>
+
+    <!-- Section des boutons sociaux -->
+    <section class="SocialButtons">
+        <a href="mailto:ibraf7831@gmail.com" class="linkbutton" target="_blank">
+            <span class="material-icons">alternate_email</span>
+            <p class="linkname">Par Email</p>
+        </a>
+
+        <a href="tel:07********" class="linkbutton" target="_blank">
+            <span class="material-icons">local_phone</span>
+            <p class="linkname">Contactez-Moi</p>
+        </a>
 
 
 
-            
 
-
-
-
-    
-    
-    
-    
-    
-    
-    
-    
-        
-    
-    
-    
-                
-
-
-
-    
-
-
-            </html>
+</section></body></html>
