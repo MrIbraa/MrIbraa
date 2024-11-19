@@ -1,0 +1,96 @@
+<html> 
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contactez-moi</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #f4f4f4;
+            margin: 0;
+            padding: 0;
+        }
+
+        .container {
+            max-width: 600px;
+            margin: 50px auto;
+            padding: 20px;
+            background-color: #fff;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+            border-radius: 8px;
+        }
+
+        h1 {
+            text-align: center;
+            color: #333;
+        }
+
+        .form-group {
+            margin-bottom: 15px;
+        }
+
+        label {
+            font-size: 16px;
+            color: #333;
+            display: block;
+            margin-bottom: 5px;
+        }
+
+        input[type="email"] {
+            width: 100%;
+            padding: 10px;
+            border: 1px solid #ccc;
+            border-radius: 4px;
+            font-size: 16px;
+        }
+
+        button {
+            width: 100%;
+            padding: 12px;
+            background-color: #007bff;
+            color: white;
+            border: none;
+            border-radius: 4px;
+            font-size: 16px;
+            cursor: pointer;
+            transition: background-color 0.3s;
+        }
+
+        button:hover {
+            background-color: #0056b3;
+        }
+    </style>
+</head>
+<body>
+
+    <div class="container">
+        <h1>Contactez-moi</h1>
+        <form action="mailto:exemple@domaine.com" method="post" enctype="text/plain">
+            <div class="form-group">
+                <label for="email">E-mail :</label>
+                <input type="email" id="email" name="email" placeholder="Entrez votre e-mail" required>
+            </div>
+            <div class="form-group">
+                <button type="submit">Envoyer le message</button>
+            </div>
+        </form>
+    </div>
+
+    <style>
+        h1 {
+            font-size: 72px;
+            text-align: center;
+            color: rgb(242, 255, 0);
+            font-family: Arial, sans-serif;
+            animation: clignote 1.5s infinite alternate;
+        }
+    
+        @keyframes clignote {
+            0% {
+                text-shadow: 0 0 10px rgb(9, 226, 255), 0 0 20px rgb(0, 234, 255), 0 0 30px rgb(0, 200, 255);
+                opacity: 1;
+            }
+            100% {
+                text-shadow: 0 0 10px rgb(0, 208, 255), 0 0 20px #00fbff, 0 0 30px #00ffd0;
+                opacity: 0.3;
+            }
+        }
